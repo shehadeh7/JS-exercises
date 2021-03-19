@@ -1,2 +1,2 @@
-# Js-exercises
+# JS-exercises
 Practicing front end
