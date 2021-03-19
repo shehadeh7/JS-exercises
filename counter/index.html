@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A small JS project</title> 
+        <script>
+            var num = 0;
+            function updateNum(op){
+                num += op;
+                document.getElementById("val").innerHTML = num;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="hdr"> COUNTER </h1>
+        <p id="val"><script>document.write(num)</script></p>
+        <button type="button" onclick="updateNum(1)"> Increment </button>
+        <br>
+        <button type="button" onclick="updateNum(-1)"> Decrement </button>
+    </body>
+</html>
