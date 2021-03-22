@@ -1,0 +1,23 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="tip.js"></script>
+    </head>
+    <body>
+        <div id="centre-screen">
+            <h1> Tip Calculator </h1>
+            <form oninput="result.value=calcTip()">
+                <label for="cash">$</label>
+                <input type="number" id="cash" name="cash" value="100"><br>
+                <input type="range" id="tip" name="tip" value="10" min="0" max="100" oninput="this.nextElementSibling.value = this.value">
+                <output>10</output> 
+                <label for="tip">%</label>
+                <h2> Results</h2>
+                <output name="result" for="cash tip">110</output>
+            </form>
+        </div>
+    </body>
+</html>
